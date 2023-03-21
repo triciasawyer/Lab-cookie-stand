@@ -1,20 +1,27 @@
-h1 {
-    font-style: sans-serif;
-    text-align: center;
-}
-
 body {
     background-color: lightsalmon;
+    font-family: 'Noto Sans Georgian', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    color: maroon;
+}
+
+h1 {
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(85, 84, 84);
+    text-align: center;
+    text-decoration: underline;
 }
 
 nav li {
     list-style-type: none;
     margin: 15px;
     padding: 3px;
-    background-color: rgb(121, 132, 216);
+    background-color: rgb(219, 221, 229);
     display: inline;
     font-size: 20px;
 }
+
 a {
     text-decoration: none;
     color: black;
