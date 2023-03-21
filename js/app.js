@@ -38,7 +38,7 @@ let storeOne = {
     let article = document.createElement('article');
     parentElement.appendChild(article);
     let storeComment = document.createElement('p');
-    storeComment.textContent = 'These cookies are the best';
+    storeComment.textContent = 'Cookie sales in Seattle';
     article.appendChild(storeComment);
     let storeUl = document.createElement('ul');
     for (let i = 0; i < hours.length; i++) {
@@ -49,14 +49,12 @@ let storeOne = {
     }
     article.appendChild(storeUl);
     const listItem = document.createElement('li');
-    listItem.textcontent = 'Total: ' + storeOne.totalDailyCookies + ' cookies';
-    console.log(listItem);
+    listItem.textContent = 'Total: ' + storeOne.totalDailyCookies + ' cookies.';
     article.appendChild(listItem);
   }
 };
 
 function randomCustomer(minCust, maxCust) {
-  console.log('🚀 ~ file: app.js:18 ~ randomCustomer ~ randomCustomer:', randomCustomer);
   return Math.floor(Math.random() * (maxCust - minCust) + minCust);
 }
 
@@ -81,7 +79,7 @@ let storeTwo = {
     let article = document.createElement('article');
     parentElement.appendChild(article);
     let storeComment = document.createElement('p');
-    storeComment.textContent = 'These cookies are the best';
+    storeComment.textContent = 'Cookie sales in Tokyo';
     article.appendChild(storeComment);
     let storeUl = document.createElement('ul');
     for (let i = 0; i < hours.length; i++) {
@@ -92,7 +90,7 @@ let storeTwo = {
     }
     article.appendChild(storeUl);
     const listItem = document.createElement('li');
-    listItem.textcontent = 'Total: ' + storeTwo.totalDailyCookies + ' cookies';
+    listItem.textContent = 'Total: ' + storeTwo.totalDailyCookies + ' cookies';
     console.log(listItem);
     article.appendChild(listItem);
   }
@@ -118,7 +116,7 @@ let storeThree = {
     let article = document.createElement('article');
     parentElement.appendChild(article);
     let storeComment = document.createElement('p');
-    storeComment.textContent = 'These cookies are the best';
+    storeComment.textContent = 'Cookie sales in Dubai';
     article.appendChild(storeComment);
     let storeUl = document.createElement('ul');
     for (let i = 0; i < hours.length; i++) {
@@ -129,7 +127,7 @@ let storeThree = {
     }
     article.appendChild(storeUl);
     const listItem = document.createElement('li');
-    listItem.textcontent = 'Total: ' + storeThree.totalDailyCookies + ' cookies';
+    listItem.textContent = 'Total: ' + storeThree.totalDailyCookies + ' cookies';
     console.log(listItem);
     article.appendChild(listItem);
   }
@@ -154,7 +152,7 @@ let storeFour = {
     let article = document.createElement('article');
     parentElement.appendChild(article);
     let storeComment = document.createElement('p');
-    storeComment.textContent = 'These cookies are the best';
+    storeComment.textContent = 'Cookie sales in Paris';
     article.appendChild(storeComment);
     let storeUl = document.createElement('ul');
     for (let i = 0; i < hours.length; i++) {
@@ -165,7 +163,7 @@ let storeFour = {
     }
     article.appendChild(storeUl);
     const listItem = document.createElement('li');
-    listItem.textcontent = 'Total: ' + storeFour.totalDailyCookies + ' cookies';
+    listItem.textContent = 'Total: ' + storeFour.totalDailyCookies + ' cookies';
     console.log(listItem);
     article.appendChild(listItem);
   }
@@ -190,7 +188,7 @@ let storeFive = {
     let article = document.createElement('article');
     parentElement.appendChild(article);
     let storeComment = document.createElement('p');
-    storeComment.textContent = 'These cookies are the best';
+    storeComment.textContent = 'Cookie sales in Lima';
     article.appendChild(storeComment);
     let storeUl = document.createElement('ul');
     for (let i = 0; i < hours.length; i++) {
@@ -201,7 +199,7 @@ let storeFive = {
     }
     article.appendChild(storeUl);
     const listItem = document.createElement('li');
-    listItem.textcontent = 'Total: ' + storeFive.totalDailyCookies + ' cookies';
+    listItem.textContent = 'Total: ' + storeFive.totalDailyCookies + ' cookies';
     console.log(listItem);
     article.appendChild(listItem);
   }
