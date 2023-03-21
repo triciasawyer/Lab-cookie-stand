@@ -1,7 +1,7 @@
 'use strict';
 console.log('js connected');
 
-let parentElement = document.getElementById('cookieProfiles');
+let parentElement = document.getElementById('cookieSales');
 
 let hours = [
   '6am',
@@ -206,10 +206,6 @@ let storeFive = {
 };
 
 
-
-
-
-
 storeOne.setCookies();
 storeOne.renderStoreData();
 storeTwo.setCookies();
@@ -220,3 +216,62 @@ storeFour.setCookies();
 storeFour.renderStoreData();
 storeFive.setCookies();
 storeFive.renderStoreData();
+
+
+
+//Lab 7 from here on down
+
+function Locations(storeName, minCust, maxCust, avgCookies){
+  this.storeName = storeName;
+  this.hourlyTotal = [];
+  this.minCust = minCust;
+  this.maxCust = maxCust;
+  this.avgCookies = avgCookies;
+  this.totalDailyCookies = 0;
+  this.cookiesPerHour = [];
+}
+
+let seattleStore = new Locations('Seattle', 23, 65, 6.3);
+let tokyoStore = new Locations('Tokyo', 3, 24, 1.2);
+let dubaiStore = new Locations('Dubai', 11, 38, 3.7);
+let parisStore = new Locations('Paris', 20, 38, 2.3);
+let limaStore = new Locations('Lima', 2, 16, 4.6);
+
+let allStores = [seattleStore, tokyoStore, dubaiStore, parisStore, limaStore];
+console.log('🚀 ~ file: app.js:242 ~ allStores:', allStores);
+
+
+// add prototype function
+Locations.prototype.setCookies = function(){
+  console.log('first prototype');
+  this.customer = amountCustomer(this.minCust, this.maxCust) + ' customers.';
+};
+
+
+
+// add second prototype
+//Locations.prototype.avgCookies = function(){
+//  let randomArrayIndex = Math.floor(Math.random() * this.hourlyTotal.length);
+//  console.log('🚀 ~ file: app.js:248 ~ randomArrayIndex:', randomArrayIndex);
+//};
+
+//helper function
+//function randomAmountCustomer(minCust, maxCust){
+//  return Math.floor(Math.random() * (maxCust - minCust) + minCust);
+//}
+
+//Locations.prototype.render = function(){
+//  let parentElement = document.getElementById('cookieSales');
+//  console.log('🚀 ~ file: app.js:264 ~ parentElement:', parentElement);
+//};
+
+
+
+
+// add table
+
+let storeTable = document.getElementById('cookieSales-table');
+let storeRow = document.createElement('tr');
+let firstCell = document.createElement('th');
+headCell.textContent = this.headCell;
+//LocationsRow.appendChild(LocationsRow);
