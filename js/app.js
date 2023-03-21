@@ -27,7 +27,6 @@ let storeOne = {
   minCust: 23,
   maxCust: 65,
   avgCookies: 6.3,
-  //avgCustomer: 0,
   totalDailyCookies: 0,
   cookiesPerHour: [],
   setCookies: function () {
@@ -71,7 +70,6 @@ let storeTwo = {
   minCust: 3,
   maxCust: 24,
   avgCookies: 1.2,
-  // avgCustomer: 0,
   totalDailyCookies: 0,
   cookiesPerHour: [],
   setCookies: function () {
@@ -109,7 +107,6 @@ let storeThree = {
   minCust: 11,
   maxCust: 38,
   avgCookies: 3.7,
-  //avgCustomer: 0,
   totalDailyCookies: 0,
   cookiesPerHour: [],
   setCookies: function () {
@@ -146,7 +143,6 @@ let storeFour = {
   minCust: 20,
   maxCust: 38,
   avgCookies: 2.3,
-  //avgCustomer: 0,
   totalDailyCookies: 0,
   cookiesPerHour: [],
   setCookies: function () {
@@ -183,7 +179,6 @@ let storeFive = {
   minCust: 2,
   maxCust: 16,
   avgCookies: 4.6,
-  //avgCustomer: 0,
   totalDailyCookies: 0,
   cookiesPerHour: [],
   setCookies: function () {
