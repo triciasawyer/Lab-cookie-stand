@@ -85,10 +85,10 @@ tableLocationHead.appendChild(tableTotal);
 let hourlyTotal = document.createElement('td');
 hourlyTotal.textContent = this.hourlyTotal;
 
-let tableFooter = document.getElementById('footerTotals');
-console.log('🚀 ~ file: app.js:286 ~ tableFooter:', tableFooter);
-tableFooter.appendChild(footerRow);
-let footerRow = document.createElement;
+//let tableFooter = document.getElementById('footerTotals');
+//console.log('🚀 ~ file: app.js:286 ~ tableFooter:', tableFooter);
+//tableFooter.appendChild(footerRow);
+//let footerRow = document.createElement;
 
 //grandtotal
 //let grandTotal = 0;
@@ -101,11 +101,8 @@ let footerRow = document.createElement;
 //  }
 //}
 
-seattleStore.storeData();
-tokyoStore.storeData();
-dubaiStore.storeData();
-parisStore.storeData();
-limaStore.storeData();
-tableFooter.storeData();
-tableRow.storeData();
-footerRow.storeData();
+seattleStore.storeInfo();
+tokyoStore.storeInfo();
+dubaiStore.storeInfo();
+parisStore.storeInfo();
+limaStore.storeInfo();
