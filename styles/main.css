@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(206, 167, 151);
+    background-color: rgba(217, 213, 211, 0.821);
     font-family: 'Noto Sans Georgian', sans-serif;
     font-family: 'Open Sans', sans-serif;
     font-size: 20px;
@@ -8,19 +8,21 @@ body {
     background-position: center;
     background-attachment: fixed;
     background-size: 40%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
 }
 
-h1 h2 {
-    font-family: 'Open Sans', sans-serif;
-    color: rgb(117, 108, 108);
-    text-align: center;
-    text-decoration: underline;
+header {
+    display: flex;
+    width: auto;
+    margin: 0;
+    background-color: rgb(206, 154, 149);
+    height: 120px;
 }
 
 nav {
     text-align: center;
-    background-color: rgb(219, 221, 229);
-    height: 40px;
 }
 
 nav li {
@@ -28,12 +30,13 @@ nav li {
     margin: 35px;
     padding: 20px;
     display: inline;
-    font-size: 30px;
+    font-size: 20px;
 }
 
 a {
     text-decoration: none;
     color: black;
+    display: inline;
 }
 
 .sales {
@@ -41,7 +44,36 @@ a {
     color: rgb(45, 79, 57);
 }
 
-table {
-    padding: 50px;
+main img {
+    position: absolute;
+    right: 7%;
+    top: 23%;
+}
+
+main h2 {
+    padding: 100px;
+}
+
+header h1 {
+    padding-left: 70px;
+    padding-top: 30px;
+    display: inline-block;
     border: 2px solid black;
+}
+
+.Merch h2 {
+text-decoration: underline;
+
+}
+
+footer {
+    background-color: rgb(82, 79, 79);
+    width: auto;
+    height: 150px;
+}
+
+footer p {
+    color: whitesmoke;
+    display: inline;
+    padding-inline: 90px;
 }
