@@ -2,6 +2,8 @@
 console.log('js connected');
 
 let storeTable = document.getElementById('cookieSales-table');
+let form = document.getElementById('store-form');
+console.log("🚀 ~ file: app.js:5 ~ form:", form)
 
 let hours = [
   '6am',
@@ -146,11 +148,12 @@ function submitForm(event){
   let avgCookiesValue = avgCookiesInput.value;
 
 
-  let newStore = new Store(storeName, minCustValue, maxCustValue, avgCookiesValue);
+  let newStore = new Location(storeName, minCustValue, maxCustValue, avgCookiesValue);
   newStore.getLocations();
-  newStore
+  newStore.render();
+  form.reset();
 }
 
 
 
-FormData.addEventListener('submit', submitForm);
+form.addEventListener('submit', submitForm);

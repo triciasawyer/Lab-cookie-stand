@@ -27,16 +27,44 @@
     <h2>Cookie Sales</h2>
 
     <main>
-        <table id="cookieSales-table">
 
+        <form id="store-form">
+            <fieldset>
+              <legend>Add store location</legend>
+    
+              <label for="name">Store Name</label>
+              <input type="text" id="name" />
+    
+              <label for="minCust">Minimum Customer</label>
+              <input type="text" id="minCust" />
+    
+              <label for="maxCust">Maximum Customer</label>
+              <input type="text" id="manCust" />
+    
+              <label for="avgCookies">Average Cookies</label>
+              <input type="text" id="avgCookies" />
+            </fieldset>
+
+            <div>
+              <button type="reset" value="reset">Reset Form</button>
+              <button type="submit">Sumbit</button>
+            </div>
+    
+          </form>
+
+
+        <table id="cookieSales-table"> 
             <tfoot id="footerTotals">
-                <tr></tr>
             </tfoot>
+
+        </table>
+
+
     </main>
 
 
     <footer>
-        <p>Contact Number: (206)523-7024</p>
+        <p>Contact: (206)523-7024</p>
         <p>Location: 1258 N 49th St. Seattle, WA</p>
         <p>Hours: 6am to 7pm</p>
     </footer>
