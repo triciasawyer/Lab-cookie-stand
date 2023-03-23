@@ -83,7 +83,15 @@ Locations.prototype.storeInfo = function () {
     locationRow.appendChild(locationCell);
   }
   //add the store totals for each store.
+  let headingTotal = document.createElement('td');
+  headingTotal.textContent = this.totalDailyCookies;
+  locationRow.appendChild(headingTotal);
 };
+
+let headingTotalTop = document.createElement('th');
+headingTotalTop.textContent = ('Total');
+tableHead.appendChild(headingTotalTop);
+
 
 Locations.prototype.render = function () {
   let parentElement = document.getElementById('footerTotals');
@@ -106,7 +114,6 @@ Locations.prototype.render = function () {
     hourlyTotalTd.textContent = hourlyTotal;
     footerRow.appendChild(hourlyTotalTd);
   }
-
   let grandTotalRow = document.createElement('td');
   grandTotalRow.textContent = grandTotal;
   footerRow.appendChild(grandTotalRow);
@@ -114,10 +121,8 @@ Locations.prototype.render = function () {
 };
 
 
-
 for (let i = 0; i < allStores.length; i++) {
   allStores[i].storeInfo();
-  // allStores[i].render();
 }
 
 
