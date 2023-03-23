@@ -62,7 +62,15 @@ header h1 {
 
 .Merch h2 {
 text-decoration: underline;
+}
 
+thead {
+
+}
+
+td, th {
+    border: 2px solid black;
+    background-color: rgb(171, 167, 167);
 }
 
 footer {

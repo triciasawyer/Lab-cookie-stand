@@ -125,5 +125,32 @@ for (let i = 0; i < allStores.length; i++) {
   allStores[i].storeInfo();
 }
 
-
 Locations.prototype.render();
+
+
+
+// function for form
+
+function submitForm(event){
+  event.preventDefault();
+  console.log('The form was submitted!');
+  event.stopPropagation();
+
+  // name
+  let storeName = event.target.name.value;
+  let minCustInput = document.getElementById('minCust');
+  let minCustValue = minCustInput['value'];
+  let maxCust = document.getElementById('maxCust');
+  let maxCustValue = maxCust.value;
+  let avgCookiesInput = document.getElementById('avgCookies');
+  let avgCookiesValue = avgCookiesInput.value;
+
+
+  let newStore = new Store(storeName, minCustValue, maxCustValue, avgCookiesValue);
+  newStore.getLocations();
+  newStore
+}
+
+
+
+FormData.addEventListener('submit', submitForm);
