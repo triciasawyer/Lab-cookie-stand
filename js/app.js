@@ -87,11 +87,6 @@ Locations.prototype.render = function(){
   console.log('🚀 ~ file: app.js:264 ~ parentElement:', parentElement);
 
 
-
-
-
-
-
   let tableFooter = document.createElement('tfoot');
   console.log('🚀 ~ file: app.js:286 ~ tableFooter:', tableFooter);
   let footerRow = document.createElement('tfoot');
