@@ -3,7 +3,7 @@ console.log('js connected');
 
 let storeTable = document.getElementById('cookieSales-table');
 let form = document.getElementById('store-form');
-console.log("🚀 ~ file: app.js:5 ~ form:", form)
+console.log('🚀 ~ file: app.js:5 ~ form:', form);
 
 let hours = [
   '6am',
