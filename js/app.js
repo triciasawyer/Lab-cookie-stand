@@ -152,6 +152,7 @@ function submitForm(event){
   newStore.getLocations();
   newStore.render();
   form.reset();
+  form.submit();
 }
 
 
