@@ -51,12 +51,6 @@ a {
     color: rgb(60, 48, 139);
 }
 
-main img {
-    position: absolute;
-    right: 7%;
-    top: 23%;
-}
-
 header h1 {
     padding-left: 50px;
     padding-top: 30px;
@@ -69,21 +63,54 @@ h3 {
 }
 
 .Merch {
-    width: 100%;
-    height: 130px;
-    padding: 80px;
     background-color: black;
-    padding-right: 20px;
+    width: 100%;
+    height: 230px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
-.Merch img {
-    display: inline;
-    align-items: center;
-    padding-inline: 60px;
+.set-one {
+    display: flex;
+    flex-direction: column;
 }
 
-.Merch button {
-    padding: 5px;
+.set-one img {
+    width: 150px;
+}
+
+.set-one button {
+    margin: 10px;
+    padding: 0%;
+}
+
+.set-two {
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+}
+
+.set-two img {
+    width: 150px;
+}
+
+.set-two button {
+    margin: 10px;
+}
+
+.set-three {
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+}
+
+.set-three img {
+    width: 150px;
+}
+
+.set-three button {
+    margin: 10px;
 }
 
 td,
@@ -131,7 +158,6 @@ footer p {
     padding-top: 30px;
 }
 
-
 .form {
     display: flex;
     flex-direction: column;
@@ -164,11 +190,11 @@ label {
     border: 0;
 }
 
-button {
+.fieldset button {
     background-color: rgb(161, 161, 165);
     transition: 0.4s;
 }
 
-button:hover {
+.fieldset button:hover {
     opacity: 0.3;
 }
