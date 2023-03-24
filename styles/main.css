@@ -2,7 +2,7 @@ body {
     font-family: 'Noto Sans Georgian', sans-serif;
     font-family: 'Open Sans', sans-serif;
     color: black;
-    background-image: linear-gradient(to bottom right, white, blue);
+    background-image: linear-gradient(150deg, white, blue);
     width: 100%;
     margin: 0;
 }
@@ -14,14 +14,20 @@ header {
     height: 120px;
 }
 
+.logo {
+    width: 110px;
+    /* transition: all ease-in-out 3s; */
+    padding-left: 30px;
+}
+
 nav {
     text-align: center;
+    
 }
 
 nav li {
     list-style-type: none;
-    margin: 35px;
-    padding: 20px;
+    padding: 92px;
     display: inline;
     font-size: 20px;
 }
@@ -43,23 +49,38 @@ main img {
     top: 23%;
 }
 
-main h2 {
-    padding: 100px;
-}
-
 header h1 {
-    padding-left: 70px;
+    padding-left: 50px;
     padding-top: 30px;
     display: inline-block;
 }
 
+h3 {
+    text-align: center;
+    padding-bottom: 100px;
+}
+
 .Merch {
-    display: grid;
-    display: inline;
-    width: auto;
-    height: 100px;
+    width: 100%;
+    height: 150px;
+    padding: 80px;
     background-color: black;
-    padding: 40px;
+    padding-right: 20px;
+}
+
+.Merch img {
+display: inline;
+align-items: center;
+padding-inline: 30px;
+}
+
+.Merch button {
+padding: 5px;
+}
+
+h2 {
+    width: 30px;
+    color: white;
 }
 
 td,
@@ -84,10 +105,9 @@ table {
 }
 
 footer {
-    margin-top: 600px;
+    margin-top: 400px;
     background-color: rgb(220, 216, 216);
-    height: 20px;
-    padding: 30px;
+    height: 80px;
 }
 
 footer p {
@@ -96,6 +116,11 @@ footer p {
     text-align: center;
     padding-inline: 80px;
 }
+.sales-footer {
+    margin-top: 200px;
+    padding-top: 30px;
+}
+
 
 .form {
     display: flex;
