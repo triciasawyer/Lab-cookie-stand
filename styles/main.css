@@ -112,7 +112,9 @@ form {
 }
 
 footer {
+    width: 100% auto;
     margin-top: 300px;
+    margin-bottom: 0px;
     background-color: rgb(220, 216, 216);
     height: 80px;
 }
