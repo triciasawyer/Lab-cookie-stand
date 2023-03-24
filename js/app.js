@@ -4,6 +4,7 @@ console.log('js connected');
 let storeTable = document.getElementById('cookieSales-table');
 let form = document.getElementById('store-form');
 console.log('🚀 ~ file: app.js:5 ~ form:', form);
+let allStores = [];
 
 let hours = [
   '6am',
@@ -31,6 +32,7 @@ function Locations(storeName, minCust, maxCust, avgCookies) {
   this.avgCookies = avgCookies;
   this.totalDailyCookies = 0;
   this.cookiesPerHour = [];
+  allStores.push(this);
 }
 
 //Location();
@@ -40,7 +42,6 @@ let dubaiStore = new Locations('Dubai', 11, 38, 3.7);
 let parisStore = new Locations('Paris', 20, 38, 2.3);
 let limaStore = new Locations('Lima', 2, 16, 4.6);
 
-let allStores = [seattleStore, tokyoStore, dubaiStore, parisStore, limaStore];
 
 // add prototype function
 Locations.prototype.cookiesSold = function () {
@@ -56,7 +57,6 @@ function randomCust(minCust, maxCust) {
   return Math.floor(Math.random() * (maxCust - minCust) + minCust);
 }
 
-// add table
 //create the table
 let tableHead = document.createElement('tr');
 let tableLocationHead = document.createElement('th');
@@ -132,27 +132,28 @@ Locations.prototype.render();
 
 
 // function for form
-
 function submitForm(event){
   event.preventDefault();
   console.log('The form was submitted!');
   event.stopPropagation();
 
   // name
-  let storeName = event.target.name.value;
+  let storeNameInput = document.getElementById('storeName').value;
   let minCustInput = document.getElementById('minCust');
   let minCustValue = minCustInput['value'];
-  let maxCust = document.getElementById('maxCust');
-  let maxCustValue = maxCust.value;
+  console.log('🚀 ~ file: app.js:147 ~ submitForm ~ minCustValue:', minCustValue);
+  let maxCustInput = document.getElementById('maxCust');
+  let maxCustValue = maxCustInput['value'];
+  console.log('🚀 ~ file: app.js:150 ~ submitForm ~ maxCustValue:', maxCustValue);
   let avgCookiesInput = document.getElementById('avgCookies');
   let avgCookiesValue = avgCookiesInput.value;
+  console.log('🚀 ~ file: app.js:153 ~ submitForm ~ avgCookiesValue:', avgCookiesValue);
 
 
-  let newStore = new Location(storeName, minCustValue, maxCustValue, avgCookiesValue);
-  newStore.getLocations();
+  let newStore = new Locations(storeNameInput, minCustValue, maxCustValue, avgCookiesValue);
+  newStore.cookiesSold();
   newStore.render();
   form.reset();
-  form.submit();
 }
 
 
