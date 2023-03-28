@@ -113,10 +113,10 @@ function renderAllStores(){
 
 //Location();
 new Locations('Seattle', 23, 65, 6.3);
-// new Locations('Tokyo', 3, 24, 1.2);
-// new Locations('Dubai', 11, 38, 3.7);
-// new Locations('Paris', 20, 38, 2.3);
-// new Locations('Lima', 2, 16, 4.6);
+new Locations('Tokyo', 3, 24, 1.2);
+new Locations('Dubai', 11, 38, 3.7);
+new Locations('Paris', 20, 38, 2.3);
+new Locations('Lima', 2, 16, 4.6);
 
 
 
