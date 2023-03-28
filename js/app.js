@@ -21,7 +21,7 @@ let hours = [
   '5pm',
   '6pm',
   '7pm',
-  '8pm',
+  '8pm'
 ];
 
 //Factory // Constructor Function
@@ -72,6 +72,7 @@ for (let i = 0; i < hours.length; i++) {
 // add second prototype
 Locations.prototype.storeInfo = function () {
   this.cookiesSold();
+
   let locationRow = document.createElement('tr');
   storeTable.appendChild(locationRow);
   let locationHead = document.createElement('th');
@@ -139,23 +140,22 @@ function submitForm(event){
 
   // name
   let storeNameInput = document.getElementById('storeName').value;
-  let minCustInput = document.getElementById('minCust');
+  let minCustInput = parseInt(document.getElementById('minCust'));
   let minCustValue = minCustInput['value'];
   console.log('🚀 ~ file: app.js:147 ~ submitForm ~ minCustValue:', minCustValue);
-  let maxCustInput = document.getElementById('maxCust');
+  let maxCustInput = parseInt(document.getElementById('maxCust'));
   let maxCustValue = maxCustInput['value'];
   console.log('🚀 ~ file: app.js:150 ~ submitForm ~ maxCustValue:', maxCustValue);
-  let avgCookiesInput = document.getElementById('avgCookies');
+  let avgCookiesInput = parseInt(document.getElementById('avgCookies'));
   let avgCookiesValue = avgCookiesInput.value;
   console.log('🚀 ~ file: app.js:153 ~ submitForm ~ avgCookiesValue:', avgCookiesValue);
 
-
   let newStore = new Locations(storeNameInput, minCustValue, maxCustValue, avgCookiesValue);
+  console.log('🚀 ~ file: app.js:153 ~ submitForm ~ newStore:', newStore);
   newStore.cookiesSold();
   newStore.render();
   form.reset();
 }
-
 
 
 form.addEventListener('submit', submitForm);
