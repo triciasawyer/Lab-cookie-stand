@@ -65,7 +65,7 @@ h3 {
 .Merch {
     background-color: black;
     width: 100%;
-    height: 230px;
+    height: 250px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -74,10 +74,12 @@ h3 {
 .set-one {
     display: flex;
     flex-direction: column;
+    width: 150px;
 }
 
 .set-one img {
     width: 150px;
+    padding-top: 10px;
 }
 
 .set-one button {
@@ -94,6 +96,7 @@ h3 {
 .set-two img {
     width: 250px;
     height: 200px;
+    padding-top: 10px;
 }
 
 .set-two button {
@@ -109,6 +112,7 @@ h3 {
 .set-three img {
     width: 250px;
     height: 200px;
+    padding-top: 10px;
 }
 
 .set-three button {
